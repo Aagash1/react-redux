@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addNote, deleteNote } from '../redux/actions';
+// import { addNote, deleteNote } from '../redux/actions';
+import { addNote, deleteNote } from '../slices/notesSlice';
 
 const Notes = () => {
   const notes = useSelector((state) => state.notes.notes);
